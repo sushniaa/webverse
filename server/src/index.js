@@ -7,6 +7,8 @@ import swaggerUi from "swagger-ui-express";
 import swaggerDocument from "../docs/swagger_output_dev_new.json" assert { type: "json" };
 import cors from "cors";
 
+import Fetchdata from 'Fetchdata.js';
+
 import mainStudentRouter from "./router/studentRouter.js";
 import mainWardenRouter from "./router/wardenRouter.js";
 import mainFacultyRouter from "./router/facultyRouter.js";

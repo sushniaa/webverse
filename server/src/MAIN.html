@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University Website</title>
+  <style>
+    /* Reset some default styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      background-color: #666666;
+    }
+
+    /* Navigation styles */
+    nav {
+      background-color: #000;
+      color: #4f4747;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    /* Hero section styles */
+    .hero {
+      background-image: url("hero-background.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 600px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #000000;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+
+    /* Role selection styles */
+    .role-selection {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+    }
+
+    .role {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 200px;
+      height: 200px;
+      margin: 0 20px;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: #ffffff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .role:hover {
+      transform: translateY(-10px);
+    }
+
+    .role-image {
+      width: 120px;
+      height: 120px;
+      margin-bottom: 10px;
+      border-radius: 50%;
+      background-color: #000000;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .role-label {
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    /* Footer styles */
+    footer {
+      background-color: #000;
+      color: #ffffff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer p {
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Courses</a>
+    <a href="#">Admissions</a>
+    <a href="#">Contact</a>
+    </ul>
+    </div>
+      
+  </nav>
+
+  <section class="hero">
+    <h1>Welcome to Our University</h1>
+    <p>Achieve your dreams with our world-class education.</p>
+    <a href="#" style="color: #181414; text-decoration: underline;">Learn More</a>
+  </section>
+
+  <div class="role-selection">
+    <a href="STD_login.html" class="role">
+      <div class="role-image" style="background-image: url('https://png.pngtree.com/png-vector/20190326/ourmid/pngtree-vector-male-student-icon-png-image_864721.jpg');"></div>
+      <span class="role-label">Student</span>
+    </a>
+    <a href="FAC_login.html" class="role">
+      <div class="role-image" style="background-image: url('https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQNAxfO-_Zde8nXzqv1njxg_xNNhJMCKTgfQZnuDM6V5_zg-czu');"></div>
+      <span class="role-label">Faculty</span>
+    </a>
+    <a href="WARD_login.html" class="role">
+      <div class="role-image" style="background-image: url('https://img.myloview.com/stickers/security-man-icon-filled-security-man-icon-for-website-design-and-mobile-app-development-security-man-icon-from-filled-occupation-collection-isolated-on-black-background-400-173356457.jpg');"></div>
+      <span class="role-label">Warden</span>
+    </a>
+  </div>
+  <footer>
+    <p>&copy; 2023 University. All rights reserved.</p>
+  </footer>
+  
+</body>
+</html>

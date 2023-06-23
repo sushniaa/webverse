@@ -60,6 +60,8 @@ facultyEventRouter.get("/get-all-approved", async (req, res) => {
       },
     });
 
+    
+
     /* #swagger.responses[200] = {
         description: 'Faculty successfully registered.',
         schema: {
@@ -235,3 +237,5 @@ facultyEventRouter.post("/reject-event", async (req, res) => {
 });
 
 export default facultyEventRouter;
+
+

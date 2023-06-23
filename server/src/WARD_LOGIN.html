@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <style>
+  /* CSS for the login page */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #94c0ec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 400px;
+  padding: 40px;
+  background-color: #fefefe;
+  border-radius: 6px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-top: 0;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #f23f98;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1e8045;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-muted {
+  color: #666;
+}
+
+.text-muted a {
+  color: #666;
+  text-decoration: none;
+}
+
+.text-muted a:hover {
+  text-decoration: underline;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Warden Login</h1>
+    <form id="loginForm" method="post">
+      <div class="form-group">
+        <label for="username">Username or Email:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <button class="GFG" onclick="window.location.href = 'studentmenu.html';">SIGN IN</button>
+    </form>
+    <p class="text-center text-muted">
+      New to this site?
+      <a href="login.html">Create an account</a>.
+    </p>
+  </div>
+  <script>
+    // JavaScript for the login page
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  // Perform form validation
+  var username = document.getElementById('username').value;
+  var password = document.getElementById('password').value;
+
+  if (!username || !password) {
+    alert('Please fill out all fields.');
+    return;
+  }
+
+  // Send form data to the server or perform desired actions
+  alert('Logging in...');
+});
+
+  </script>
+</body>
+</html>
